@@ -1,5 +1,24 @@
-<h1>About</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <div class="wap_about">
+      <h1 class="About_page">About</h1>
 
-<p>안녕하세요, 이곳은 글자를 세주는 멋쟁이 사자처럼의 워드카운트 웹페이지입니다. 여기에서 글자를 세세요</p>
+      <p class="About_word">
+        멋쟁이 사자처럼 7기 2차과제 WordCount 만들기입니다.<br />
+        WordCount는 글자를 세어주는 웹페이지입니다.<br />
+        Home으로 가셔서 글자를 입력하시면 됩니다.
+      </p>
 
-<a href="{%url 'home'%}">Home으로 돌아가기</a>
+      <a href="{%url 'home'%}">Home으로 돌아가기</a>
+    </div>
+  </body>
+</html>

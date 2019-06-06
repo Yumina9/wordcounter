@@ -1,0 +1,51 @@
+body {
+  background-color: #74b9ff;
+}
+
+.wordcount,
+.About_page,
+.result_page {
+  color: #ffffff;
+  text-shadow: 4px 4px 0px #bdbdbd;
+}
+
+.total {
+  color: #ffcccc;
+}
+
+.word,
+.About_word,
+.result_text,
+.result_word {
+  color: #dfe6e9;
+}
+
+.About_word {
+  font-size: 17px;
+}
+
+.container,
+.wap_about {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+#button {
+  border: none;
+  border-radius: 15px;
+  color: #636e72;
+  background: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.about {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.textbox {
+  height: 400px;
+  width: 400px;
+}

@@ -1,9 +1,31 @@
-<h1>안녕하세요, 여기에서 열심히 글자를 세세요!</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="wordcount">WordCount!</h1>
+      <br />
+      <h3 class="word">글자를 세어볼까요?</h3>
 
-<a href="{%url 'about'%}">ABOUT</a>
+      <a class="about" href="{%url 'about'%}">ABOUT</a>
 
-<form action="{%url 'result' %}">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="Count!">
-</form>
+      <form action="{%url 'result' %}">
+        <textarea
+          class="textbox"
+          cols="40"
+          rows="10"
+          name="fulltext"
+        ></textarea>
+        <br />
+        <input id="button" type="submit" value="Count!" />
+      </form>
+    </div>
+  </body>
+</html>
